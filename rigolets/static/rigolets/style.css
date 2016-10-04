@@ -1,0 +1,62 @@
+.pen-ribbon {
+  width: 100%;
+  height: 45vh;
+  background-color:#F44235;
+  background: linear-gradient(rgba(254, 200, 110,0.4), rgba(254, 200, 110,0.4)),url('http://www.slate.com/content/dam/slate/blogs/business_insider/2013/10/08/130810_bi_100billfront.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+.pen-main {  
+  font-family: 'IM Fell DW Pica', serif;
+  font-size: 1.6em;
+  margin-top: -10vh;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+
+.pen-header .mdl-layout__header-row {
+  padding-left: 40px;
+}
+
+.pen-container {
+  max-width: 1600px;
+  width: calc(100% - 16px);
+  margin: 0 auto;
+}
+
+.pen-content {
+  border-radius: 2px;
+  padding: 80px 56px;
+  margin-bottom: 80px;
+}
+
+.pen-layout.is-small-screen .pen-content {
+  padding: 40px 28px;
+}
+
+.pen-content h3 {
+  font-family: 'IM Fell DW Pica SC', serif;
+  margin-top: 48px;
+}
+
+.pen-card-wide.mdl-card {
+  width:500px;
+}
+
+.mdl-card__title {
+  width: 500px;
+  background: url('http://img.ifcdn.com/images/140234c2ffe0c759a9e30c01660351ac73870a644d3921628327718b466f51c6_1.jpg') center / contain;
+  background-repeat: no-repeat;
+}
+
+.pen-footer {
+  padding-left: 40px;
+}
+
+.pen-footer .mdl-mini-footer--link-list a {
+  font-size: 13px;
+}
