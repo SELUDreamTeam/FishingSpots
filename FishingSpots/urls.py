@@ -17,6 +17,8 @@ from django.conf.urls import url, include
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^$', include('rigolets.urls')),
+    url(r'^', include('rigolets.urls')),
+    url(r'^about/', include('rigolets.urls')),
+    url(r'^map/', include('rigolets.urls')),
     url(r'^admin/', admin.site.urls),
 ]

@@ -1,10 +1,10 @@
 .pen-ribbon {
   width: 100%;
   height: 45vh;
-  background-color:#F44235;
-  background: linear-gradient(rgba(254, 200, 110,0.4), rgba(254, 200, 110,0.4)),url('http://www.slate.com/content/dam/slate/blogs/business_insider/2013/10/08/130810_bi_100billfront.jpg');
+  background-color:#6479BC;
+  background: linear-gradient(rgba(100,110,115,0.4), rgba(100,110,115,0.4)), url('http://cdn.louisianatravel.com/sites/default/master/files/FortPikeSHS_ViewFromRigolets.jpg');
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: 50%;
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
           flex-shrink: 0;
@@ -30,7 +30,7 @@
 
 .pen-content {
   border-radius: 2px;
-  padding: 80px 56px;
+  padding: 20px 56px 80px 56px;
   margin-bottom: 80px;
 }
 
@@ -40,7 +40,7 @@
 
 .pen-content h3 {
   font-family: 'IM Fell DW Pica SC', serif;
-  margin-top: 48px;
+  margin-top: 20px;
 }
 
 .pen-card-wide.mdl-card {
@@ -59,4 +59,23 @@
 
 .pen-footer .mdl-mini-footer--link-list a {
   font-size: 13px;
+}
+
+.present {
+  font-family: "Arial", sans-serif;
+  padding-top: 40px;
+}
+
+.present p, li {
+  font-size: 24px;
+}
+
+.present h2 {
+  font-size: 36px;
+}
+
+#subtitle {
+  font-family: 'IM Fell DW Pica SC', serif;
+  margin: 0 auto;
+  margin-bottom: 40px;
 }
