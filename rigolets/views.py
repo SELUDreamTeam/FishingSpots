@@ -17,11 +17,11 @@ def about (request):
 	return HttpResponse(template.render(request))
 
 def ol_map (request):
-	data_points =  serializers.serialize("json", RigoletsLayer.objects.all())
+	data_points =  RigoletsLayer.objects.all()
 	context = {'data_points' : data_points}
 	template = loader.get_template('rigolets/openlayers.html')
-	return HttpResponse(template.render(request))
+	return HttpResponse(template.render(request, context))
 
-class RigoletsViewSet(viewsets.ModelViewSet):
-	queryset = RigoletsLayer.objects.all()
-	serializer_class = RigoletsSerializer
+# class RigoletsViewSet(viewsets.ModelViewSet):
+# 	queryset = RigoletsLayer.objects.all()
+# 	serializer_class = RigoletsSerializer

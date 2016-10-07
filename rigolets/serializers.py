@@ -15,4 +15,4 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
 class RigoletsSerializer(serializers.HyperlinkedModelSerializer):
 	class Meta:
 		model = RigoletsLayer
-		fields = ('name', 'url', 'lon', 'lat', 'mpoly')
+		fields = ('name', 'url', 'lon', 'lat', 'geom')
