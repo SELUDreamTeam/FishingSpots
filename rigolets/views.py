@@ -3,9 +3,10 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import loader
 from .models import RigoletsLayer
-from rest_framework import viewsets
-from rigolets.serializers import UserSerializer, GroupSerializer, RigoletsSerializer
+from rest_framework import viewsets, response
+from rigolets.serializers import UserSerializer, GroupSerializer, RigoletsSerializer, MapSerializer
 from django.core import serializers
+import json
 
 # Create your views here.
 def index (request):
@@ -18,10 +19,10 @@ def about (request):
 
 def ol_map (request):
 	data_points =  RigoletsLayer.objects.all()
-	context = {'data_points' : data_points}
-	template = loader.get_template('rigolets/openlayers.html')
-	return HttpResponse(template.render(request, context))
+	serializer = MapSerializer(data_points, many=True)
+	points = []
+	for feat in serializer.data['features']:
+		points.append(feat)
+	context = { 'request' : request }
 
-# class RigoletsViewSet(viewsets.ModelViewSet):
-# 	queryset = RigoletsLayer.objects.all()
-# 	serializer_class = RigoletsSerializer
+	return render(request, "rigolets/openlayers.html", {'data_points' : points })
