@@ -1,0 +1,81 @@
+.pen-ribbon {
+  width: 100%;
+  height: 45vh;
+  background-color:#6479BC;
+  background: linear-gradient(rgba(100,110,115,0.4), rgba(100,110,115,0.4)), url('http://cdn.louisianatravel.com/sites/default/master/files/FortPikeSHS_ViewFromRigolets.jpg');
+  background-size: cover;
+  background-position: 50%;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+.pen-main {  
+  font-family: 'IM Fell DW Pica', serif;
+  font-size: 1.6em;
+  margin-top: -10vh;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+
+.pen-header .mdl-layout__header-row {
+  padding-left: 40px;
+}
+
+.pen-container {
+  max-width: 1600px;
+  width: calc(100% - 16px);
+  margin: 0 auto;
+}
+
+.pen-content {
+  border-radius: 2px;
+  padding: 20px 56px 80px 56px;
+  margin-bottom: 80px;
+}
+
+.pen-layout.is-small-screen .pen-content {
+  padding: 40px 28px;
+}
+
+.pen-content h3 {
+  font-family: 'IM Fell DW Pica SC', serif;
+  margin-top: 20px;
+}
+
+.pen-card-wide.mdl-card {
+  width:500px;
+}
+
+.mdl-card__title {
+  width: 500px;
+  background: url('http://img.ifcdn.com/images/140234c2ffe0c759a9e30c01660351ac73870a644d3921628327718b466f51c6_1.jpg') center / contain;
+  background-repeat: no-repeat;
+}
+
+.pen-footer {
+  padding-left: 40px;
+}
+
+.pen-footer .mdl-mini-footer--link-list a {
+  font-size: 13px;
+}
+
+.present {
+  font-family: "Arial", sans-serif;
+  padding-top: 40px;
+}
+
+.present p, li {
+  font-size: 24px;
+}
+
+.present h2 {
+  font-size: 36px;
+}
+
+#subtitle {
+  font-family: 'IM Fell DW Pica SC', serif;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
