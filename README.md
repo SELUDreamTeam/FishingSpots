@@ -17,5 +17,5 @@ Starting the project:
 -Run the command: python manage.py runserver then open browser to localhost:8000
 
 Make this file executable and run it with 'bash fs411.sh'
-[a relative link](fs411.sh)
+[Setup script](fs411.sh)
 
