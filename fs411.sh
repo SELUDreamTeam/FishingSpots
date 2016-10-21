@@ -80,7 +80,7 @@ else
     sudo -u postgres psql -c "CREATE USER $db_user WITH PASSWORD '$db_password'"
     sudo -u postgres psql -c "ALTER ROLE $db_user SET client_encoding TO 'utf8'"
     sudo -u postgres psql -c "ALTER ROLE $db_user SET default_transaction_isolation TO 'read committed'"
-    sudo -u postgres psql -c "ALTER ROLE $db_user SET timezone TO 'CST'"
+    sudo -u postgres psql -c "ALTER ROLE $db_user SET timezone TO 'UTC'"
     sudo -u postgres psql -c "ALTER ROLE $db_user SUPERUSER"
     sudo -u postgres psql -c "GRANT ALL PRIVILEGES ON DATABASE $db_name TO $db_user"   
 fi
