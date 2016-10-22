@@ -43,22 +43,27 @@ INSTALLED_APPS = [
     'rest_framework_gis',
     'rigolets',
     'api.apps.ApiConfig',
+    'corsheaders',
 ]
 
 REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES' : ('rest_framework.permissions.IsAdminUser',),
+    'DEFAULT_PERMISSION_CLASSES' : (),  # ('rest_framework.permissions.IsAuthenticatedOrReadOnly'),
     'PAGE_SIZE' : 10
 }
+# 'rest_framework.permissions.IsAdminUser',
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+CORS_ORIGIN_ALLOW_ALL = True
 
 ROOT_URLCONF = 'FishingSpots.urls'
 

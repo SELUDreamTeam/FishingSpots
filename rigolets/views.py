@@ -19,9 +19,9 @@ def about (request):
 
 def ol_map (request):
 	data_points =  RigoletsLayer.objects.all()
-	serializer = MapSerializer(data_points, many=True)
+	serializer_class = MapSerializer(data_points, many=True)
 	points = []
-	for feat in serializer.data['features']:
+	for feat in serializer_class.data['features']:
 		points.append(feat)
 	context = { 'request' : request }
 

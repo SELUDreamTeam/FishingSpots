@@ -10,6 +10,7 @@
 		<div class="mdl-grid">
             <div class="mdl-cell mdl-cell--3-col mdl-cell--hide-tablet mdl-cell--hide-phone">
               <ul class="pen-content mdl-list">
+
                 {% for e in data_points %}
                   <li class="mdl-list__item-primary-content">
                   <button id="point{{ forloop.counter }}" type="button" attr="{{ e.properties.lat }}, {{ e.properties.lon }}">
@@ -17,6 +18,7 @@
                   </button>
                   </li>
                 {% endfor %}
+                
               </ul>
             </div>
             <div class="mdl-shadow--4dp mdl-cell mdl-cell--9-col" id="map" style="width: 100%, max-height: 200px"></div>
