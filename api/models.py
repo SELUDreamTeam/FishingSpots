@@ -20,3 +20,14 @@ class BaseScore(models.Model):
 
 	def __str__(self):
 		return self.name
+
+class DataSource(models.Model):
+	"""docstring for DataSource"""
+	name = models.CharField("Data Source", blank=True, max_length=50)
+	base_url = models.CharField("Base Url", blank=True, max_length=100)
+	query_string = models.CharField("Query String", blank=True, max_length=255)
+	access_token = models.CharField("Access Token", blank=True, max_length=100)
+	request_url = models.CharField("Request URL", max_length=500)
+
+	def __str__(self):
+		return self.request_url

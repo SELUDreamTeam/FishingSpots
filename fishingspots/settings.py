@@ -65,7 +65,7 @@ MIDDLEWARE = [
 
 CORS_ORIGIN_ALLOW_ALL = True
 
-ROOT_URLCONF = 'FishingSpots.urls'
+ROOT_URLCONF = 'fishingspots.urls'
 
 TEMPLATES = [
     {
@@ -83,7 +83,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'FishingSpots.wsgi.application'
+WSGI_APPLICATION = 'fishingspots.wsgi.application'
 
 
 # Database
@@ -135,6 +135,6 @@ USE_TZ = False
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 # STATIC_ROOT = os.path.join(os.path.abspath(
-#     os.path.join(PROJECT_ROOT, 'FishingSpots', 'static')), '')
+#     os.path.join(PROJECT_ROOT, 'fishingspots', 'static')), '')
 
 STATIC_URL = '/static/'
