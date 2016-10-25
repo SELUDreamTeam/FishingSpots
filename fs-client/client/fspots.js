@@ -2,6 +2,19 @@ var mymap = L.map('mapid').setView([30.17, -89.6838], 13);
 L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     attribution: 'LionGIS'
 }).addTo(mymap);
+var coords = [30.17, -89.6838];
+var latlng = L.latLng(30.17, -89.6838);
+var marker = L.marker(latLng).addTo(map);
+
+var getData(function(data)){
+  var Fspots = data.Fspots;
+  var latLng;
+  for (i in Fspots){
+    var marker = L.marker(latLng).addTo(map);
+  }
+}
+
+
 
 //
 // for (var i = 0; i < data.length; i++ )
